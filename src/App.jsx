@@ -1,16 +1,16 @@
-function Hello(){
+function Hello(props){
   return (
-    <p>Hello World</p>
+    <p>Hello {props.userName}</p>
   )
 }
 
 function App() {
+
+  let user1 = Bharathan
   return(
     <div>
       <p>Greetings</p>
-      <Hello />
-      <Hello />
-      <Hello />
+      <Hello {userName=user1}/>
     </div>
     
   )
